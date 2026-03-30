@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap");
+@import "tailwindcss";
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -167,7 +170,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -4.5px;
     border: 5px solid transparent;
@@ -181,4 +184,8 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+
+.nav-button {
+  cursor: pointer;
 }

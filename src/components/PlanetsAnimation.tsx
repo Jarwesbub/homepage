@@ -82,11 +82,15 @@ function PlanetLayer({
   return <>{View}</>;
 }
 
-export function InteractivePlanets() {
+type PlanetsAnimationProps = {
+  size?: number;
+};
+
+export function PlanetsAnimation({ size = 600 }: PlanetsAnimationProps) {
   const stackStyle = {
     position: "relative" as const,
-    width: 600,
-    height: 600,
+    width: size,
+    height: size,
     margin: "0 auto",
   };
 
@@ -103,7 +107,6 @@ export function InteractivePlanets() {
 
   return (
     <div>
-      <h2 className="font-medium !text-sky-200">Lottie Animation Test</h2>
       <div style={stackStyle}>
         {transparentAnimations.map((animationData, index) => (
           <PlanetLayer

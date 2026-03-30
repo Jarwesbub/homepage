@@ -1,10 +1,12 @@
-import { InteractivePlanets } from "./components/InteractivePlanets.tsx";
 import "./App.css";
+import { FrontPage } from "./pages/FrontPage.tsx";
+import { NavBar } from "./pages/NavBar.tsx";
 
 function App() {
   return (
     <>
-      <InteractivePlanets />
+      <NavBar />
+      <FrontPage />
     </>
   );
 }
