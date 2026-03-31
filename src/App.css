@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap");
 @import "tailwindcss";
 
+#root {
+  border-inline: none;
+}
+
+@media (max-width: 1126px) {
+  #root {
+    border-inline: 1px solid var(--border);
+  }
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -188,4 +198,10 @@
 
 .nav-button {
   cursor: pointer;
+}
+
+.nav-button svg {
+  width: 1em;
+  height: 1em;
+  display: block;
 }

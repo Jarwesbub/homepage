@@ -2,7 +2,7 @@ import { PlanetsAnimation } from "../components/PlanetsAnimation";
 
 // Front page test.
 
-export function FrontPage() {
+export function HomePage() {
   return (
     <>
       <div className="flex flex-col justify-center items-center md:flex-row md:items-start md:gap-8">
